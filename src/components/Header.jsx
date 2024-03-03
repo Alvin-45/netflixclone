@@ -6,8 +6,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../assets/netflixlogo.png'
+import { useNavigate } from 'react-router-dom';
+
 function Header() {
+    const navigate=useNavigate()
+  const handleNavigate=()=>{
+    navigate('/tv')
+  }
   return (
+    
     <>
     <Navbar expand="lg" classNameName="bg-dark" id='topnav'>
       <Container fluid>
@@ -22,7 +29,7 @@ function Header() {
           >
             <Nav.Link href="#action1" id='nvlink1'>Home</Nav.Link>
             <Nav.Link href="#action2" id='nvlink2'>Movies</Nav.Link>
-            <Nav.Link href="#action2" id='nvlink3'>TV Shows</Nav.Link>
+            <Nav.Link href="#action2" id='nvlink3' onClick={handleNavigate}>TV Shows</Nav.Link>
             <Nav.Link href="#action2" id='nvlink4'>Genres</Nav.Link>
             
           </Nav>

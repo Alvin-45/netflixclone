@@ -62,7 +62,7 @@
       color: orange;
     }
     .st1{
-      filter: brightness(50%);
+      /* filter: brightness(50%); */
       width: 50%;
       height: 600px;
       border-radius: 20%;
@@ -72,16 +72,35 @@
       flex-direction: row;
     }
     .ver{
+      padding-left: 15px;
       padding-right: 15px;
       border-right:1px solid #fff7f7;
       height:25px;
+      font-weight: 500;
     }
     .ver2{
+      padding-left: 15px;
       padding-right: 15px;
       border-right:1px solid #fff7f7;
       height:25px;
+      font-weight: 500;
+
     }
     .ver3{
-      padding-right: 15px;
+      padding-left: 15px;
       height:25px;
+      font-weight: 500;
+
+    }
+    .lpage{
+      margin-top: 100px;
+    }
+    .mdesc{
+      width: 50%;
+    }
+    #wtchbtn{
+      cursor: help;
+    }
+    #wtchbtn:hover{
+      box-shadow: 2px 2px 2px 2px red;
     }

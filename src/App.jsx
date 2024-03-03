@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Sidenav from './Sidenav';
 import Landingpage from './components/Landingpage';
 import { Route, Routes } from 'react-router-dom';
+import Tv from './components/Tv';
 
 function App() {
 
@@ -19,8 +20,9 @@ function App() {
             <Header />
             <Routes>
             <Route path='/' element={<Landingpage/>} />
-
+            <Route path='/tv' element={<Tv/>} />
             </Routes>
+            <hr style={{color:'grey'}}/>
             <Footer />
           </div>
         </div>

@@ -1,8 +1,10 @@
 import React from 'react'
 import st1logo from '../assets/st1name.png'
-function Landingpage() {
+
+function Tv() {
   return (
-    <div className='lpage text-light'>
+    <>
+     <div className='lpage text-light'>
         <div className="banner d-flex justify-content-around">
             <div className="filmdata">
                 <img src={st1logo} alt="" />
@@ -21,7 +23,9 @@ function Landingpage() {
         </div>
         
         </div>
+
+    </>
   )
 }
 
-export default Landingpage
+export default Tv
