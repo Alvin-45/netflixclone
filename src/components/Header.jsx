@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Header() {
     const navigate=useNavigate()
-  const handleNavigate=()=>{
+  const handleNavigatetv=()=>{
     navigate('/tv')
   }
   return (
@@ -28,8 +28,8 @@ function Header() {
             navbarScroll
           >
             <Nav.Link href="#action1" id='nvlink1'>Home</Nav.Link>
-            <Nav.Link href="#action2" id='nvlink2'>Movies</Nav.Link>
-            <Nav.Link href="#action2" id='nvlink3' onClick={handleNavigate}>TV Shows</Nav.Link>
+            <Nav.Link href="" id='nvlink2'>Movies</Nav.Link>
+            <Nav.Link id='nvlink3' onClick={handleNavigatetv}>TV Shows</Nav.Link>
             <Nav.Link href="#action2" id='nvlink4'>Genres</Nav.Link>
             
           </Nav>

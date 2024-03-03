@@ -2,6 +2,8 @@
 .footer{
   color: white;
   width: 100%;
+  margin-top: 100px;
+
 }
 .col>a{
   color: white;
@@ -23,4 +25,55 @@
 .col2{
   overflow-x: hidden;
   margin-left: -40px;
+}
+
+/* banner */
+.fullbody3{
+}
+
+.hiking-types {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  
+}
+
+.type {
+  width: 280px;
+  height: 400px;
+  margin-top: 150px;
+  margin-left: 150px;
+  margin-bottom: 1rem;
+  text-align: left;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+  position: relative;
+  
+}
+.type::-webkit-scrollbar {
+  display: none;
+}
+
+.type h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 20%;
+  text-align: center;
+}
+
+.type p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 10%;
+  padding: 8px;
+  text-align: center;
 }

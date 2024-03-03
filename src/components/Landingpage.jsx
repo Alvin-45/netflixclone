@@ -1,5 +1,7 @@
 import React from 'react'
 import st1logo from '../assets/st1name.png'
+import Cards from './Cards'
+
 function Landingpage() {
   return (
     <div className='lpage text-light'>
@@ -19,6 +21,7 @@ function Landingpage() {
             <img className='st1' src="https://assets-prd.ignimgs.com/2022/05/12/stranger-things-4-poster-1652364986162.jpeg" alt="" />
             
         </div>
+        <Cards/>
         
         </div>
   )

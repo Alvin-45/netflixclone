@@ -6,6 +6,7 @@ import Sidenav from './Sidenav';
 import Landingpage from './components/Landingpage';
 import { Route, Routes } from 'react-router-dom';
 import Tv from './components/Tv';
+import SliderPart from './components/SliderPart';
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
       <div className="fullbody">
         <div className="row">
           <div className="col-1">
-            <Sidenav />
+            <Sidenav/>
           </div>
           <div className="col-11 col2">
             <Header />
