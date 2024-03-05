@@ -9,13 +9,14 @@ import Tv from './components/Tv';
 import SliderPart from './components/SliderPart';
 import Movies from './components/Movies';
 import Search from './components/Search';
+import Categories from './components/Categories';
 
 function App() {
 
   return (
     <>
       <div className="fullbody">
-        <div className="row">
+        <div className="row" style={{width:'100%'}}>
           <div className="col-1">
             <Sidenav/>
           </div>
@@ -26,6 +27,7 @@ function App() {
             <Route path='/tv' element={<Tv/>} />
             <Route path='/movies' element={<Movies/>} />
             <Route path='/search' element={<Search/>} />
+            <Route path='/categories' element={<Categories/>} />
             </Routes>
             <hr style={{color:'grey'}}/>
             <Footer />

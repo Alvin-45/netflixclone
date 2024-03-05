@@ -1,6 +1,7 @@
 import React from 'react'
 import st1logo from '../assets/st1name.png'
 import Anime from './Anime'
+import Kids from './Kids'
 
 function Tv() {
   return (
@@ -19,13 +20,13 @@ function Tv() {
                 <button className="btn bg-danger text-light fw-bolder m-3 p-2 " id='wtchbtn'><i className="fa-solid fa-play" style={{color: "#ffffff"}}></i> Start Watching</button>
                 <button className="btn btn-outline-light fw-bolder m-3 p-2">Play trailer</button>
             </div>
-            <img className='st1' src="https://assets-prd.ignimgs.com/2022/05/12/stranger-things-4-poster-1652364986162.jpeg" alt="" />
+            <img className='st1' src="https://upload.wikimedia.org/wikipedia/en/d/d4/Stranger_Things_season_3.png" alt="" />
             
         </div>
         
         </div>
         <Anime/>
-
+        <Kids/>
     </>
   )
 }

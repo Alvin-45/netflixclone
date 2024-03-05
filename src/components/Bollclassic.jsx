@@ -18,19 +18,21 @@ function Bollclassic() {
     <div>
         <div className="action">
         <h3 className='text-light'>2023 Releases</h3>
-        <div className='card-container d-flex justify-content-around '>
-          {movies.map(movie => (
-            <Card key={movie.imdbID} className='cd' >
-              <Card.Img variant="top" className="card-img" src={movie.Poster} />
-              <Card.Body>
-                <h2 className="name text-light">{movie.Title}</h2>
-            <h6 className="des">
-              {movie.Type}
-            </h6>
-            <button className="watchlist-btn">add to watchlist</button>
-              </Card.Body>
-            </Card>
-          ))}
+        <div className='d-flex justify-content-around '>
+          <div className='card-container '>
+            {movies.map(movie => (
+              <Card id='card1' key={movie.imdbID} className='cd' >
+                <Card.Img variant="top" className="card-img" src={movie.Poster} />
+                <Card.Body>
+                  <h2 className="name text-light">{movie.Title}</h2>
+              <h6 className="des">
+                {movie.Type}
+              </h6>
+              <button className="watchlist-btn">add to watchlist</button>
+                </Card.Body>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </div>

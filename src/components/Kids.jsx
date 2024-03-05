@@ -1,13 +1,11 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Card } from 'react-bootstrap';
-import Kids from './Kids';
-
-function Tvshows() {
+function Kids() {
     const [movies, setMovies] = useState([]);
     useEffect(() => {
         const fetchData = async () => {
-          const searchInput = "series"; // You can change this to whatever search query you want
+          const searchInput = "cartoon"; // You can change this to whatever search query you want
           const response = await axios.get(`https://www.omdbapi.com/?apikey=dd3fb3bb&s=${searchInput}`);
           setMovies(response.data.Search);
         };
@@ -16,15 +14,15 @@ function Tvshows() {
       }, []);
   return (
     <>
-    <div className="tvfull">
-    <div className="action">
-        <h3>Browse by TV shows</h3>
+        <div>
+        <div className="action">
+        <h3 className='text-light'>Kids Zone</h3>
         <div className='d-flex justify-content-around '>
           <div className='card-container '>
             {movies.map(movie => (
               <Card id='card1' key={movie.imdbID} className='cd' >
                 <Card.Img variant="top" className="card-img" src={movie.Poster} />
-                <Card.Body >
+                <Card.Body>
                   <h2 className="name text-light">{movie.Title}</h2>
               <h6 className="des">
                 {movie.Type}
@@ -37,9 +35,8 @@ function Tvshows() {
         </div>
       </div>
     </div>
-    
     </>
   )
 }
 
-export default Tvshows
+export default Kids

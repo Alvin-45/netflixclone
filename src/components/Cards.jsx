@@ -25,20 +25,22 @@ function Cards() {
            <Videocard/>
            <Acion/>
            <h3>Browse by Comedy</h3>
-        <div className='card-container d-flex justify-content-around '>
-          {movies.map(movie => (
-            <Card key={movie.imdbID} >
-              <Card.Img variant="top" className="card-img" src={movie.Poster} />
-              <Card.Body>
-                <h2 className="name text-light">{movie.Title}</h2>
-            <h6 className="des">
-            {movie.Type}
-            </h6>
-            <button className="watchlist-btn">add to watchlist</button>
-              </Card.Body>
-            </Card>
-            
-          ))}
+        <div className='d-flex justify-content-around '>
+          <div className='card-container'>
+            {movies.map(movie => (
+              <Card id='card1' key={movie.imdbID} >
+                <Card.Img variant="top" className="card-img" src={movie.Poster} />
+                <Card.Body className='card-body'>
+                  <h2 className="name text-light">{movie.Title}</h2>
+              <h6 className="des">
+              {movie.Type}
+              </h6>
+              <button className="watchlist-btn">add to watchlist</button>
+                </Card.Body>
+              </Card>
+              
+            ))}
+          </div>
           
         </div>
         <Tvshows/>
