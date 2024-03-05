@@ -10,6 +10,8 @@ import cycle from "../images/cycle.jpg";
 import kayaking from "../images/kayaking.jpg";
 import paragliding from "../images/para.jpg";
 import raft from '../images/raft.jpg'
+import { useNavigate } from 'react-router-dom';
+
 function SliderPart() {
     const settings = {
         dots: true,
@@ -18,6 +20,10 @@ function SliderPart() {
         slidesToShow: 3,
         slidesToScroll: 1
       };
+      const navigate=useNavigate()
+    const handleNavigatehome=()=>{
+      navigate('/search')
+    }
   return (
     <>
         <div className='fullbody3'>

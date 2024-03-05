@@ -7,6 +7,8 @@ import Landingpage from './components/Landingpage';
 import { Route, Routes } from 'react-router-dom';
 import Tv from './components/Tv';
 import SliderPart from './components/SliderPart';
+import Movies from './components/Movies';
+import Search from './components/Search';
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
             <Routes>
             <Route path='/' element={<Landingpage/>} />
             <Route path='/tv' element={<Tv/>} />
+            <Route path='/movies' element={<Movies/>} />
+            <Route path='/search' element={<Search/>} />
             </Routes>
             <hr style={{color:'grey'}}/>
             <Footer />

@@ -6,7 +6,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from './assets/netflixlogo.png'
+import { useNavigate } from 'react-router-dom';
+
 function Sidenav() {
+    const navigate=useNavigate()
+    const handleNavigatesearch=()=>{
+      navigate('/search')
+    }
   return (
     <div>
         <Nav className="navigation">
@@ -21,8 +27,7 @@ function Sidenav() {
                 title="Home"></span></a></li>
     <li>
         <a href="#">
-            <i className="fa-solid fa-magnifying-glass fa-lg mb-5 search"></i><span
-                title="About"></span></a></li>
+            <i className="fa-solid fa-magnifying-glass fa-lg mb-5 search" onClick={handleNavigatesearch}></i></a></li>
     <li>
         <a href="#">
         <i className="fa-regular fa-circle-user fa-lg mb-5 user"></i><span

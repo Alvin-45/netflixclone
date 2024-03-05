@@ -21,6 +21,8 @@
   z-index: 400;
   width: 100%;
   background-color: black;
+  margin-left: -60px;
+  
 }
 .col2{
   overflow-x: hidden;
@@ -28,8 +30,7 @@
 }
 
 /* banner */
-.fullbody3{
-}
+
 
 .hiking-types {
   display: flex;
@@ -76,4 +77,36 @@
   margin-top: 10%;
   padding: 8px;
   text-align: center;
+}
+.cd{
+  width: 600px;
+  height: 200px;
+  margin-right: 20px;
+}
+.action{
+  z-index: 500;
+}
+#banner2{
+  background-image: url(./img1/BlackGradient.png);
+}
+.b1img{
+  width: 100%;
+}
+.b2img{
+  width: 350px;
+}
+.fullbodySearch{
+  margin-top: 100px;
+  color: white;
+}
+.tbox{
+  width: 30%;
+  height: 35px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.result{
+  margin: 100px;
 }

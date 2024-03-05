@@ -10,25 +10,31 @@ import { useNavigate } from 'react-router-dom';
 
 function Header() {
     const navigate=useNavigate()
+    const handleNavigatehome=()=>{
+      navigate('/')
+    }
   const handleNavigatetv=()=>{
     navigate('/tv')
+  }
+  const handleNavigatemovie=()=>{
+    navigate('/movies')
   }
   return (
     
     <>
-    <Navbar expand="lg" classNameName="bg-dark" id='topnav'>
+    <Navbar expand="lg"  id='topnav'>
       <Container fluid>
-        <Navbar.Brand href="#" classNameName='text-light '>
+        <Navbar.Brand href="#" className='text-light '>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" className='d-flex justify-content-around'>
           <Nav
-            classNameName=" my-2 my-lg-0"
+            className="my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1" id='nvlink1'>Home</Nav.Link>
-            <Nav.Link href="" id='nvlink2'>Movies</Nav.Link>
+            <Nav.Link id='nvlink1' onClick={handleNavigatehome}>Home</Nav.Link>
+            <Nav.Link id='nvlink2'  onClick={handleNavigatemovie}>Movies</Nav.Link>
             <Nav.Link id='nvlink3' onClick={handleNavigatetv}>TV Shows</Nav.Link>
             <Nav.Link href="#action2" id='nvlink4'>Genres</Nav.Link>
             
@@ -37,7 +43,7 @@ function Header() {
             <Form.Control
               type="search"
               placeholder="Search"
-              classNameName="me-2 bg-body-dark"
+              className=" bg-body-dark"
               aria-label="Search"
             />
             <Button variant="outline-success">Search</Button>

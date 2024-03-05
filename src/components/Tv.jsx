@@ -1,5 +1,6 @@
 import React from 'react'
 import st1logo from '../assets/st1name.png'
+import Anime from './Anime'
 
 function Tv() {
   return (
@@ -23,6 +24,7 @@ function Tv() {
         </div>
         
         </div>
+        <Anime/>
 
     </>
   )

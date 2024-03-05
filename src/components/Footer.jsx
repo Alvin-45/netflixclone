@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <>
-     <div classNameName="footer">
+     <div className="footer">
             <h2 className='text-light'>Questions? call 000-000-000-000</h2>
             <div className="row">
                 <div className="col">
